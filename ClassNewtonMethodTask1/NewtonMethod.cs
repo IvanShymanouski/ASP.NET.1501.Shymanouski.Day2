@@ -17,13 +17,18 @@ namespace ClassNewtonMethodTask1
         /// <returns></returns>
         public static double RootCalculation(double value, double power, double accuracy)
         {
-            double startValueX0=1;
+            double startValueX0 = 1;
             double squareRoot = (1 / power) * ((power - 1) * startValueX0 + (value / Math.Pow(startValueX0, power - 1)));
+
+            if (power % 2 == 0 && value < 0) return Double.NaN;
+            else if (value == 0) return 0;
+
             double temp;
-            do{
-                temp=squareRoot;
+            do
+            {
+                temp = squareRoot;
                 squareRoot = (1 / power) * ((power - 1) * squareRoot + (value / Math.Pow(squareRoot, power - 1)));
-            }while(Math.Abs(temp-squareRoot)>accuracy);
+            } while (Math.Abs(temp - squareRoot) > accuracy);
             return squareRoot;
         }
     }

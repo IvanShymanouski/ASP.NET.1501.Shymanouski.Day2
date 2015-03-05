@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TestCases>
+  <TestCase>
+    <value>112</value>
+    <testFormat>{0} in hex = {0:Hex}</testFormat>
+    <checkFormat>{0} in hex = {0:X}</checkFormat>
+  </TestCase>
+  <TestCase>
+    <value>0</value>
+    <testFormat>{0} in hex = {0:hex}</testFormat>
+    <checkFormat>{0} in hex = {0:x}</checkFormat>
+  </TestCase>
+  <!--
+  <TestCase>
+    <value>-62</value>
+    <testFormat>{0} in hex = {0:Hex}</testFormat>
+    <checkFormat>{0} in hex = {0:X}</checkFormat>
+  </TestCase>
+  <TestCase>
+    <value>-18882</value>
+    <testFormat>{0} in hex = {0:hex}</testFormat>
+    <checkFormat>{0} in hex = {0:x}</checkFormat>
+  </TestCase>
+  -->
+  <TestCase>
+    <value>-62</value>
+    <testFormat>{0} in hex = {0:Hex}</testFormat>
+    <checkFormat>{0} in hex = -3E</checkFormat>
+  </TestCase>
+  <TestCase>
+    <value>-18882</value>
+    <testFormat>{0} in hex = {0:hex}</testFormat>
+    <checkFormat>{0} in hex = -49c2</checkFormat>
+  </TestCase>
+</TestCases>
