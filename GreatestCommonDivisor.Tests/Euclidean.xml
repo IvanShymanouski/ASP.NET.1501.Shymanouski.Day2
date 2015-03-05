@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TestCases>
+  <TestCase>
+    <a>100</a>
+    <b>20</b>
+    <result>20</result>
+  </TestCase>
+  <TestCase>
+    <a>93</a>
+    <b>81</b>
+    <result>3</result>
+  </TestCase>
+  <TestCase>
+    <a>0</a>
+    <b>9999</b>
+    <result>9999</result>
+  </TestCase>
+  <TestCase>
+    <a>0</a>
+    <b>0</b>
+    <result>0</result>
+  </TestCase>
+  <TestCase>
+    <a>36</a>
+    <b>91</b>
+    <result>1</result>
+  </TestCase>
+</TestCases>

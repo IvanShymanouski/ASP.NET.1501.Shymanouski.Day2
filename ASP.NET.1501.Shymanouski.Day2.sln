@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomHexFormatProvider.Tes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassNewtonMethodTask1.Tests", "ClassNewtonMethodTask1.Tests\ClassNewtonMethodTask1.Tests.csproj", "{3F06516A-FC77-4D97-A655-A15CDD59097E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreatestCommonDivisor", "GreatestCommonDivisor\GreatestCommonDivisor.csproj", "{06157FED-A106-4BAC-9A1B-03759219C80F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreatestCommonDivisor.Tests", "GreatestCommonDivisor.Tests\GreatestCommonDivisor.Tests.csproj", "{9827DF13-6316-406D-8F8C-8FFF3C22183D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +41,14 @@ Global
 		{3F06516A-FC77-4D97-A655-A15CDD59097E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F06516A-FC77-4D97-A655-A15CDD59097E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F06516A-FC77-4D97-A655-A15CDD59097E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06157FED-A106-4BAC-9A1B-03759219C80F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06157FED-A106-4BAC-9A1B-03759219C80F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06157FED-A106-4BAC-9A1B-03759219C80F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06157FED-A106-4BAC-9A1B-03759219C80F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9827DF13-6316-406D-8F8C-8FFF3C22183D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9827DF13-6316-406D-8F8C-8FFF3C22183D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9827DF13-6316-406D-8F8C-8FFF3C22183D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9827DF13-6316-406D-8F8C-8FFF3C22183D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
