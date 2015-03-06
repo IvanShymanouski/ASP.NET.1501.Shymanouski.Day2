@@ -15,7 +15,17 @@ namespace GreatestCommonDivisorLibrary
         /// <param name="a"> First number </param>
         /// <param name="b"> Second number </param>
         /// <returns> Greatest Common divisor </returns>
-        public static int EuclideanAlgorithm(int a, int b)
+        public static int EuclideanAlgorithmWithTiming(out long passedTicks, int a, int b)
+        {
+            long startTicks = System.Diagnostics.Stopwatch.GetTimestamp();
+
+            int result = EuclideanAlgorithm(a, b);
+
+            passedTicks = System.Diagnostics.Stopwatch.GetTimestamp() - startTicks;
+            return result;
+        }
+
+        private static int EuclideanAlgorithm(int a, int b)
         {
             if (a < 0) a = -a;
             if (b < 0) b = -b;
@@ -33,9 +43,20 @@ namespace GreatestCommonDivisorLibrary
         /// <summary>
         /// Method calculates greatest common divisor of N-th numbers with help the Euclidean algorithm.
         /// </summary>
+        /// <param name="passedTicks"></param>
         /// <param name="param"> Numbers </param>
         /// <returns> Greatest common divisor </returns>
-        public static int EuclideanAlgorithm(params int[] param)
+        public static int EuclideanAlgorithmWithTiming(out long passedTicks, params int[] param)
+        {
+            long startTicks = System.Diagnostics.Stopwatch.GetTimestamp();
+
+            int result = EuclideanAlgorithm(param);
+
+            passedTicks = System.Diagnostics.Stopwatch.GetTimestamp() - startTicks;
+            return result;
+        }
+
+        private static int EuclideanAlgorithm(params int[] param)
         {
             switch (param.Length)
             {
@@ -57,10 +78,21 @@ namespace GreatestCommonDivisorLibrary
         /// <summary>
         /// Method calculates greatest common divisor of two numbers with help the Stein's algorithm.
         /// </summary>
+        /// <param name="passedTicks"></param>
         /// <param name="a"> First number </param>
         /// <param name="b"> Second number </param>
         /// <returns> Greatest Common divisor </returns>
-        public static int SteinAlgorithm(int a, int b)
+        public static int SteinAlgorithmWithTiming(out long passedTicks, int a, int b)
+        {
+             long startTicks = System.Diagnostics.Stopwatch.GetTimestamp();
+
+             int result = SteinAlgorithm(a,b);
+
+             passedTicks = System.Diagnostics.Stopwatch.GetTimestamp() - startTicks;
+             return result;
+        }
+
+        private static int SteinAlgorithm(int a, int b)
         {
             int shift;
 
@@ -93,9 +125,21 @@ namespace GreatestCommonDivisorLibrary
         /// <summary>
         /// Method calculates greatest common divisor of N-th numbers with help the Stein's algorithm.
         /// </summary>
+        /// <param name="passedTicks"></param>
         /// <param name="param"> Numbers </param>
         /// <returns> Greatest common divisor </returns>
-        public static int SteinAlgorithm(params int[] param)
+        /// <returns></returns>
+        public static int SteinAlgorithmWithTiming(out long passedTicks, params int[] param)
+        {
+            long startTicks = System.Diagnostics.Stopwatch.GetTimestamp();
+
+            int result = SteinAlgorithm(param);
+
+            passedTicks = System.Diagnostics.Stopwatch.GetTimestamp() - startTicks;
+            return result;
+        }
+
+        private static int SteinAlgorithm(params int[] param)
         {
             switch (param.Length)
             {
