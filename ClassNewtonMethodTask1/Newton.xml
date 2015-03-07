@@ -2,7 +2,7 @@
 <TestCases>
   <TestCase>
     <value>99</value>
-    <power>0,2</power>
+    <power>0.2</power>
     <accuracy>0,0001</accuracy>
   </TestCase>
   <TestCase>
@@ -18,7 +18,7 @@
   <TestCase>
     <value>1321233</value>
     <power>1</power>
-    <accuracy>0,0000001</accuracy>
+    <accuracy>0.0000001</accuracy>
   </TestCase>
   <TestCase>
     <value>1321233</value>

@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Globalization;
 
 namespace ClassNewtonMethodTask1.Tests
 {
@@ -18,9 +19,9 @@ namespace ClassNewtonMethodTask1.Tests
         public void RootCalculationTest1()
         {
 
-            double value = double.Parse((string)TestContext.DataRow["value"]);
-            double power = double.Parse((string)TestContext.DataRow["power"]);
-            double accuracy = double.Parse((string)TestContext.DataRow["accuracy"]);
+            double value = double.Parse((string)TestContext.DataRow["value"], CultureInfo.InvariantCulture);
+            double power = double.Parse((string)TestContext.DataRow["power"], CultureInfo.InvariantCulture);
+            double accuracy = double.Parse((string)TestContext.DataRow["accuracy"], CultureInfo.InvariantCulture);
 
             double root = NewtonMethod.RootCalculation(value, power, accuracy);
 
