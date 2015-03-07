@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<TestCases>
+<TestCases>  
   <TestCase>
     <value>112</value>
     <testFormat>{0} in hex = {0:Hex}</testFormat>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TestCases>
+  <TestCase>
+    <value>-6</value>
+    <testFormat>{0} in Currency = {0:C}</testFormat>
+  </TestCase>
+  <TestCase>
+    <value>-18882</value>
+    <testFormat>{0} in Percent = {0:P}</testFormat>
+  </TestCase>
+  <TestCase>
+    <value>798</value>
+    <testFormat>{0} in Pad with leading zeros = {0:D5}</testFormat>
+  </TestCase>
+  <TestCase>
+    <value>-12324</value>
+    <testFormat>{0} in General = {0:G2}</testFormat>
+  </TestCase>
+</TestCases>

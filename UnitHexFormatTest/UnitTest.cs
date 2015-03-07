@@ -25,5 +25,23 @@ namespace CustomHexFormatProvider.Tests
 
             Assert.AreEqual(s1,s2);
         }
+
+        [DataSource(
+           "Microsoft.VisualStudio.TestTools.DataSource.XML",
+           "|DataDirectory|\\OtherFormat.xml",
+           "TestCase",
+           DataAccessMethod.Sequential)]
+        [DeploymentItem("CustomHexFormatProvider.Tests\\OtherFormat.xml")]
+        [TestMethod]
+        public void FormatTest2()
+        {
+            var provider = new HexFormat();
+            var value = Convert.ToInt64(TestContext.DataRow["value"]);
+
+            string s1 = string.Format(provider, Convert.ToString(TestContext.DataRow["testFormat"]), value);
+            string s2 = string.Format(Convert.ToString(TestContext.DataRow["testFormat"]), value);
+
+            Assert.AreEqual(s1, s2);
+        }
     }
 }
