@@ -3,17 +3,17 @@
   <TestCase>
     <value>99</value>
     <power>0.2</power>
-    <accuracy>0,0001</accuracy>
+    <accuracy>0.0001</accuracy>
   </TestCase>
   <TestCase>
     <value>8</value>
     <power>3</power>
-    <accuracy>0,0000001</accuracy>
+    <accuracy>0.0000001</accuracy>
   </TestCase>
   <TestCase>
     <value>-9</value>
     <power>22</power>
-    <accuracy>0,000000000001</accuracy>
+    <accuracy>0.000000000001</accuracy>
   </TestCase>
   <TestCase>
     <value>1321233</value>
@@ -23,7 +23,7 @@
   <TestCase>
     <value>1321233</value>
     <power>0</power>
-    <accuracy>0,0000001</accuracy>
+    <accuracy>0.0000001</accuracy>
   </TestCase>
   <TestCase>
     <value>0</value>
